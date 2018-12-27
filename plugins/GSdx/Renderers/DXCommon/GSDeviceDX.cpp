@@ -123,6 +123,13 @@ bool GSDeviceDX::SetFeatureLevel(D3D_FEATURE_LEVEL level, bool compat_mode)
 		m_shader.ps = "ps_5_0";
 		m_shader.cs = "cs_5_0";
 		break;
+	case D3D_FEATURE_LEVEL_11_1:
+		m_shader.model = "0x500";
+		m_shader.vs = "vs_5_0";
+		m_shader.gs = "gs_5_0";
+		m_shader.ps = "ps_5_0";
+		m_shader.cs = "cs_5_0";
+		break;
 	default:
 		ASSERT(0);
 		return false;
